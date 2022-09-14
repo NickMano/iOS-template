@@ -56,7 +56,6 @@
 				0768D1AC065CE0457B010656 /* Pods-iOS-template-uikit.debug.xcconfig */,
 				CD94047D99AF0A626133AD5A /* Pods-iOS-template-uikit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -100,6 +99,7 @@
 			buildConfigurationList = D00B95C928CFF97800AFE79E /* Build configuration list for PBXNativeTarget "iOS-template-uikit" */;
 			buildPhases = (
 				A31E8A3E5C1A7FDB69A4FFF6 /* [CP] Check Pods Manifest.lock */,
+				D0BCF71428D0CC7800272DD7 /* Linter */,
 				D00B95B128CFF97500AFE79E /* Sources */,
 				D00B95B228CFF97500AFE79E /* Frameworks */,
 				D00B95B328CFF97500AFE79E /* Resources */,
@@ -138,6 +138,9 @@
 				Base,
 			);
 			mainGroup = D00B95AC28CFF97400AFE79E;
+			packageReferences = (
+				D0BCF71328D0CB6800272DD7 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = D00B95B628CFF97500AFE79E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -199,6 +202,25 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		D0BCF71428D0CC7800272DD7 /* Linter */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Linter;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -429,6 +451,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D0BCF71328D0CB6800272DD7 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = D00B95AD28CFF97500AFE79E /* Project object */;
 }
