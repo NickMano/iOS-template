@@ -9,14 +9,11 @@ import UIKit
 import SwiftUI
 
 class MainViewController: UIViewController {
-    private let principalView = UIHostingController(rootView: MainView())
+    private let principalView = MainView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addChild(principalView)
-        principalView.view.frame = view.frame
-        view.addSubview(principalView.view)
-        principalView.didMove(toParent: self)
+        setupView(principalView)
     }
 }

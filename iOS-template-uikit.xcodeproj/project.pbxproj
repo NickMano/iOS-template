@@ -80,15 +80,39 @@
 		D00B95B728CFF97500AFE79E /* iOS-template-uikit */ = {
 			isa = PBXGroup;
 			children = (
-				D00B95B828CFF97500AFE79E /* AppDelegate.swift */,
-				D00B95BA28CFF97500AFE79E /* SceneDelegate.swift */,
-				D00B95BC28CFF97500AFE79E /* MainViewController.swift */,
-				D00B95C128CFF97800AFE79E /* Assets.xcassets */,
-				D00B95C328CFF97800AFE79E /* LaunchScreen.storyboard */,
+				D09CA2DC28D8B36C002FC53A /* Commons */,
+				D09CA2DE28D8B38B002FC53A /* Extensions */,
+				D09CA2DD28D8B37B002FC53A /* Views */,
 				D00B95C628CFF97800AFE79E /* Info.plist */,
-				D09CA2D528D4FB1B002FC53A /* MainView.swift */,
 			);
 			path = "iOS-template-uikit";
+			sourceTree = "<group>";
+		};
+		D09CA2DC28D8B36C002FC53A /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				D00B95B828CFF97500AFE79E /* AppDelegate.swift */,
+				D00B95BA28CFF97500AFE79E /* SceneDelegate.swift */,
+				D00B95C128CFF97800AFE79E /* Assets.xcassets */,
+				D00B95C328CFF97800AFE79E /* LaunchScreen.storyboard */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		D09CA2DD28D8B37B002FC53A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D00B95BC28CFF97500AFE79E /* MainViewController.swift */,
+				D09CA2D528D4FB1B002FC53A /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D09CA2DE28D8B38B002FC53A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
