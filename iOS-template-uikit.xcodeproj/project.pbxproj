@@ -13,6 +13,7 @@
 		D00B95C228CFF97800AFE79E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D00B95C128CFF97800AFE79E /* Assets.xcassets */; };
 		D00B95C528CFF97800AFE79E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D00B95C328CFF97800AFE79E /* LaunchScreen.storyboard */; };
 		D09CA2D628D4FB1B002FC53A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CA2D528D4FB1B002FC53A /* MainView.swift */; };
+		D09CA2E028D8B39F002FC53A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09CA2DF28D8B39F002FC53A /* UIViewController.swift */; };
 		E4352F9D112125802F4AF5AF /* Pods_iOS_template_uikit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B225F2DC0D4EA0636939522 /* Pods_iOS_template_uikit.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		D00B95C428CFF97800AFE79E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D00B95C628CFF97800AFE79E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D09CA2D528D4FB1B002FC53A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D09CA2DF28D8B39F002FC53A /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		D09CA2DE28D8B38B002FC53A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D09CA2DF28D8B39F002FC53A /* UIViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				D09CA2D628D4FB1B002FC53A /* MainView.swift in Sources */,
 				D00B95B928CFF97500AFE79E /* AppDelegate.swift in Sources */,
 				D00B95BB28CFF97500AFE79E /* SceneDelegate.swift in Sources */,
+				D09CA2E028D8B39F002FC53A /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
